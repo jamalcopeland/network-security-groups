@@ -34,7 +34,8 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 <h2>Actions and Observations</h2>
 
 <p>
-<img src = "https://imgur.com/a/Xv1Sn0A" height = "400" width = "400">
+  ![virtual machine snip](https://github.com/user-attachments/assets/d0196b21-7d33-4826-bcb1-65210974cad9)
+
 
 
 
