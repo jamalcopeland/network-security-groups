@@ -40,7 +40,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 Created a resource group. Create 2 virtual machines that share a common resource group and region. While configuring virtual machine allow it to create a virtual network and subnet. Establish an adminstrator account for access. 
 </p>
 <br />
-![image](https://github.com/user-attachments/assets/edc6233c-5649-4072-91d2-c42a3734a43a)
+ <img src="images/rdp login.PNG" height="40%" width="50%" alt="Disk Sanitization Steps"/>
 
 
 <p>
