@@ -86,7 +86,7 @@ Sent a ping to google.com to observe ICMP traffic in Wireshark. Applied an 'icmp
   Configured an inbound security rule within the Azure portal to deny ICMP traffic (used for ping/echo requests) to the virtual machine. This was done by setting the protocol to ICMP, source and destination to ‘Any,’ and action to ‘Deny.’ Verified that the rule has a lower priority than the SSH allow rule to ensure SSH access remains unaffected.
 </p>
 <br />
-<img src="images/ping firewall.PNG" height="40%" width="50%" alt="Disk Sanitization Steps"/>
+<img src="images/ping firewall.png" height="40%" width="50%" alt="Disk Sanitization Steps"/>
 <p>
   Monitored ICMP activity post firewall configuration in Wireshark by applying a filter for ICMP traffic.
 </p>
