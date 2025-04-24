@@ -57,7 +57,21 @@ Sent a ping to google.com to observe ICMP traffic in Wireshark. Applied an 'icmp
 
 <img src="images/tcp.port.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <p>
-  Monitored RDP (Remote Desktop Protocol) activity by filtering for TCP port 3389 traffic in Wireshark
+  (Within wireshark) Monitored RDP (Remote Desktop Protocol) activity by filtering for TCP port 3389 traffic in Wireshark
 </p>
 
-<img src="images/tcp.port.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="images/ssh login.png" height="40%" width="50%" alt="Disk Sanitization Steps"/>
+<p>
+  (In powershell) Login to second virtual machine using private IP address and password that we configured earlier. 
+</p>  
+<br />
+
+<img src="images/ssh traffic.png" height="40%" width="50%" alt="Disk Sanitization Steps"/>
+<p>
+  Monitored SSH (Secure Shell) activity in Wireshark by applying a filter for tcp.port == 22 or selecting the SSH protocol. This allowed observation of the connection handshake and encrypted session data between the client and server.
+</p>
+<br />
+<img src="images/ssh traffic.png" height="40%" width="50%" alt="Disk Sanitization Steps"/>
+<p>
+  
+</p>
