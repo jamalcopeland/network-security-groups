@@ -88,5 +88,5 @@ Sent a ping to google.com to observe ICMP traffic in Wireshark. Applied an 'icmp
 <br />
 <img src="images/ping firewall.png" height="40%" width="50%" alt="Disk Sanitization Steps"/>
 <p>
-  Monitored ICMP activity post firewall configuration in Wireshark by applying a filter for ICMP traffic.
+  Verified firewall rule effectiveness by monitoring ICMP traffic in Wireshark using an icmp filter. Confirmed that ICMP Echo Requests were sent but no replies were received due to the block, resulting in 100% packet loss.
 </p>
