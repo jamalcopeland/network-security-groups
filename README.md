@@ -73,5 +73,10 @@ Sent a ping to google.com to observe ICMP traffic in Wireshark. Applied an 'icmp
 <br />
 <img src="images/dhcpp.png" height="40%" width="50%" alt="Disk Sanitization Steps"/>
 <p>
-  
+  Used ipconfig /renew in PowerShell as admin to trigger my machine to request a new IP address lease from the DHCP server. This sends a DHCP Request packet from the client to the server, and the server responds with a DHCP ACK confirming the lease. Since my machine already had a lease, it skipped the initial Discover/Offer steps and went straight to Request/ACK. I monitored this handshake using Wireshark with the filter dhcp || udp.port == 67 || udp.port == 68
+</p>
+<br />
+<img src="images/dns.png" height="40%" width="50%" alt="Disk Sanitization Steps"/>
+<p>
+  Used nslookup in PowerShell to resolve the IP address of disney.com. Applied the Wireshark filter udp.port == 53 to monitor DNS query and response traffic, which uses UDP port 53 for communication between the client and the DNS server.
 </p>
