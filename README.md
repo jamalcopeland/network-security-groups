@@ -71,7 +71,7 @@ Sent a ping to google.com to observe ICMP traffic in Wireshark. Applied an 'icmp
   Monitored SSH (Secure Shell) activity in Wireshark by applying a filter for tcp.port == 22 or selecting the SSH protocol. This allowed observation of the connection handshake and encrypted session data between the client and server.
 </p>
 <br />
-<img src="images/ssh traffic.png" height="40%" width="50%" alt="Disk Sanitization Steps"/>
+<img src="images/dhcp.png" height="40%" width="50%" alt="Disk Sanitization Steps"/>
 <p>
   
 </p>
