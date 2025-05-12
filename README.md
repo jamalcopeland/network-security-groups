@@ -33,17 +33,19 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 <h2>Actions and Observations</h2>
 
-<p>
+
   <img src="images/screensnip1" height="40%" width="50%" alt="Disk Sanitization Steps"/>
-</p>
+
+![image](https://github.com/user-attachments/assets/0130cb68-1631-4dde-86dc-e564cbca1e68)
+
 <p>
-Created a resource group. Create 2 virtual machines that share a common resource group and region. While configuring virtual machine allow it to create a virtual network and subnet. Establish an adminstrator account for access. 
+Create a resource group. Create 2 virtual machines that share a common resource group and region. While configuring first virtual machine create a virtual network and subnet. Establish an administrator account for access. Configure image of first virtual machine to Windows 10. Configure image of second virtual machine to Ubuntu Server. (For SSH use later)
 </p>
 <br />
  
  <img src="images/rdp login.PNG" height="40%" width="50%" alt="Disk Sanitization Steps"/>
 <p>
-Log into the virtual machines using Windows remote desktop connection. 
+Log in to Windows virtual machine using Windows Remote Desktop Connection. 
 </p>
 <br />
 
@@ -51,7 +53,7 @@ Log into the virtual machines using Windows remote desktop connection.
 <img src="images/icmp.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Sent a ping to google.com to observe ICMP traffic in Wireshark. Applied an 'icmp' filter to capture and view the echo request and reply packets being sent and received.
+Open powershell and wireshark. Send a ping to google.com to observe ICMP traffic in Wireshark. Applied an 'icmp' filter to capture and view the echo request and reply packets being sent and received.
 </p>
 <br />
 
@@ -73,7 +75,7 @@ Sent a ping to google.com to observe ICMP traffic in Wireshark. Applied an 'icmp
 <br />
 <img src="images/dhcpp.png" height="40%" width="50%" alt="Disk Sanitization Steps"/>
 <p>
-  Used ipconfig /renew in PowerShell as admin to trigger my machine to request a new IP address lease from the DHCP server. This sends a DHCP Request packet from the client to the server, and the server responds with a DHCP ACK confirming the lease. Since my machine already had a lease, it skipped the initial Discover/Offer steps and went straight to Request/ACK. I monitored this handshake using Wireshark with the filter dhcp || udp.port == 67 || udp.port == 68
+  Used ipconfig /renew in PowerShell as an admin to trigger my machine to request a new IP address lease from the DHCP server. This sends a DHCP Request packet from the client to the server, and the server responds with a DHCP ACK confirming the lease. Since my machine already had a lease, it skipped the initial Discover/Offer steps and went straight to Request/ACK. I monitored this handshake using Wireshark with the filter dhcp || udp.port == 67 || udp.port == 68
 </p>
 <br />
 <img src="images/dns.png" height="40%" width="50%" alt="Disk Sanitization Steps"/>
